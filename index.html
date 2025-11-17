@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Medio Ambiente</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <h1>Ejercicios Medio Ambiente</h1>
+    
+    <div class="menu">
+        <button onclick="ver(1)">Ejercicio 1</button>
+        <button onclick="ver(2)">Ejercicio 2</button>
+        <button onclick="ver(3)">Ejercicio 3</button>
+        <button onclick="ver(4)">Ejercicio 4</button>
+        <button onclick="ver(5)">Ejercicio 5</button>
+    </div>
+
+    <div id="e1" class="ej">
+        <h3>Calidad del aire</h3>
+        <input type="number" id="aqi">
+        <button onclick="e1()">Clasificar</button>
+        <p id="r1"></p>
+        <button onclick="menu()">Volver</button>
+    </div>
+
+    <div id="e2" class="ej">
+        <h3>Niveles de ruido</h3>
+        <input type="number" id="mediciones" placeholder="Número de mediciones">
+        <button onclick="e2()">Calcular</button>
+        <p id="r2"></p>
+        <button onclick="menu()">Volver</button>
+    </div>
+
+    <div id="e3" class="ej">
+        <h3>Focos de calor</h3>
+        <input type="number" id="temp">
+        <button onclick="a3()">Agregar</button>
+        <button onclick="c3()">Contar</button>
+        <p id="r3"></p>
+        <button onclick="menu()">Volver</button>
+    </div>
+
+    <div id="e4" class="ej">
+        <h3>Tipo de residuo</h3>
+        <select id="residuo">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <button onclick="e4()">Clasificar</button>
+        <p id="r4"></p>
+        <button onclick="menu()">Volver</button>
+    </div>
+
+    <div id="e5" class="ej">
+        <h3>Nivel del río</h3>
+        <input type="number" id="nivel" placeholder="Nivel en metros">
+        <button onclick="a5()">Agregar</button>
+        <button onclick="c5()">Ver alertas</button>
+        <p id="r5"></p>
+        <button onclick="menu()">Volver</button>
+    </div>
+
+    <script src="main2.js"></script>
+</body>
+</html>
